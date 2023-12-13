@@ -73,6 +73,57 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+              <tr onmouseout="iccv_2023_stop()" onmouseover="iccv_2023_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='iccv_2023_video'><video width=100% muted autoplay loop>
+                        <source src="images_jim/xvo_seq.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <div id='iccv_2023_still'><img src='images_jim/xvo.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function iccv_2023_start() {
+                      document.getElementById('iccv_2023_video').style.display = 'inline';
+                      document.getElementById('iccv_2023_still').style.display = 'none';
+                    }
+
+                    function iccv_2023_stop() {
+                      document.getElementById('iccv_2023_video').style.display = 'none';
+                      document.getElementById('iccv_2023_still').style.display = 'inline';
+                    }
+                    iccv_2023_stop()
+                  </script>
+                </td>
+
+
+
+                <td
+                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2309.16772.pdf">
+                    <papertitle>XVO: Generalized Visual Odometry via Cross-Modal Self-Training
+                      </papertitle>
+                  </a>
+                  <br>
+                  Lei Lai*, Zhongkai Shangguan*, <strong>Jimuyang Zhang</strong>,
+                   <a href="https://eshed1.github.io/">Eshed Ohn-Bar</a>
+                  <br>
+                  <em>International Conference on Computer Vision (ICCV)</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/pdf/2309.16772.pdf">paper</a> &nbsp/&nbsp
+                  <a href="https://genxvo.github.io/">webpage</a>
+                  <p></p>
+                  <p>We propose XVO, a semi-supervised learning method for training generalized monocular Visual Odometry (VO) models with 
+                    robust off-the-shelf operation across diverse datasets and settings. We empirically demonstrate the benefits of semi-supervised 
+                    training for learning a general-purpose direct VO regression network. Moreover, we demonstrate multi-modal supervision, including 
+                    segmentation, flow, depth, and audio auxiliary prediction tasks, to facilitate generalized representations for the VO task.
+                  </p>
+                </td>
+              </tr>
+              <!-- END PAPER XVO -->
+
+
               
               
               <tr onmouseout="cvpr_2023_stop()" onmouseover="cvpr_2023_start()">
