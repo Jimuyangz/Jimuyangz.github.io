@@ -74,6 +74,63 @@
             <tbody>
 
 
+
+
+              
+               <tr onmouseout="cvpr_2024_stop()" onmouseover="cvpr_2024_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='cvpr_2024_video'><video width=100% muted autoplay loop>
+                        <source src="images_jim/FeD_short.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <div id='cvpr_2024_still'><img src='images_jim/fed.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function cvpr_2024_start() {
+                      document.getElementById('cvpr_2024_video').style.display = 'inline';
+                      document.getElementById('cvpr_2024_still').style.display = 'none';
+                    }
+
+                    function cvpr_2024_stop() {
+                      document.getElementById('cvpr_2024_video').style.display = 'none';
+                      document.getElementById('cvpr_2024_still').style.display = 'inline';
+                    }
+                    cvpr_2024_stop()
+                  </script>
+                </td>
+
+
+
+                <td
+                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/pdf/2309.16772.pdf">
+                    <papertitle>Feedback-Guided Autonomous Driving
+                      </papertitle>
+                  </a>
+                  <br>
+                  <strong>Jimuyang Zhang</strong>, <a href="https://tzmhuang.github.io/">Zanming Huang, <a href="https://arijitray1993.github.io/">Arijit Ray,
+                   <a href="https://scholar.google.com/citations?user=p9zVBV4AAAAJ&hl=en&oi=ao">Eshed Ohn-Bar</a>
+                  <br>
+                  <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+                  <br>
+                  <a https://github.com/Jimuyangz/Jimuyangz.github.io/blob/main/papers/FeD_v1.pdf">paper</a> &nbsp/&nbsp
+                  <a href="https://jimuyangz.github.io/">webpage</a>
+                  <p></p>
+                  <p>We introduce FeD, a highly efficient MLLM-based sensorimotor driving model, enabled by three key improvements: 1) language-based feedback 
+                    refining trained using auto-generated feedback data. 2) training the model via distillation from a privileged agent with Bird's Eye View (BEV) 
+                    of the scene, allowing our model to robustly use just RGB data at test time. 3) predicting driving waypoints in a masked-token fashion from the 
+                    waypoint tokens' internal representations, i.e., not relying on the slow sequentially generative process.
+                  </p>
+                </td>
+              </tr>
+              <!-- END PAPER FeD -->
+
+
+
+
+              
+
               <tr onmouseout="iccv_2023_stop()" onmouseover="iccv_2023_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
