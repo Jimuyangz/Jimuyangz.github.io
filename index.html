@@ -31,7 +31,7 @@
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
                     <name>Jimuyang Zhang</name>
-                  <p>I am a fourth-year PhD student at Boston University, advised by Prof. <a
+                  <p>I am a fifth-year PhD student at Boston University, advised by Prof. <a
                       href="https://eshed1.github.io/">Eshed Ohn-Bar</a>.
                     
                   <p>
@@ -74,6 +74,58 @@
             <tbody>
 
 
+
+
+
+              <tr onmouseout="eccv_2024_stop()" onmouseover="eccv_2024_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='eccv_2024_video'><video width=100% muted autoplay loop>
+                        <source src="images_jim/Nemo_vid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <div id='eccv_2024_still'><img src='images_jim/Nemo_pic.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function eccv_2024_start() {
+                      document.getElementById('eccv_2024_video').style.display = 'inline';
+                      document.getElementById('eccv_2024_still').style.display = 'none';
+                    }
+
+                    function eccv_2024_stop() {
+                      document.getElementById('eccv_2024_video').style.display = 'none';
+                      document.getElementById('eccv_2024_still').style.display = 'inline';
+                    }
+                    eccv_2024_stop()
+                  </script>
+                </td>
+
+
+
+                <td
+                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">
+                  <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02571.pdf">
+                    <papertitle>Neural Volumetric World Models for Autonomous Driving
+                      </papertitle>
+                  </a>
+                  <br>
+                  <strong>Jimuyang Zhang*</strong>, <a href="https://tzmhuang.github.io/">Zanming Huang*,
+                   <a href="https://scholar.google.com/citations?user=p9zVBV4AAAAJ&hl=en&oi=ao">Eshed Ohn-Bar</a>
+                  <br>
+                  <em>European Conference on Computer Vision (ECCV)</em>, 2024
+                  <br>
+                  <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02571.pdf">paper</a> &nbsp/&nbsp
+                  <a href="https://eccv.ecva.net/virtual/2024/poster/250">webpage</a> &nbsp/&nbsp
+                  <a href="https://youtu.be/HYFvPfyaZfM">video</a>
+                  <p></p>
+                  <p>We introduce NeMo, a neural volumetric world modeling approach that can be trained in a self-supervised manner for image reconstruction and 
+                    occupancy prediction tasks, benefiting scalable training and deployment paradigms such as imitation learning. We demonstrate how the higher-fidelity 
+                    modeling of 3D volumetric representations benefits vision-based motion planning. We propose a motion flow module to model complex dynamic scenes, and
+                    introduce a temporal attention module to effectively integrate predicted future volumetric features for the planning task.
+                  </p>
+                </td>
+              </tr>
+              <!-- END PAPER NeMo -->
 
 
               
